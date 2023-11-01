@@ -1,0 +1,24 @@
+<figure class="card">
+    <div class="card__emoji">{%PROPS.IMG%}</div>
+    <div class="card__title-box">
+      <h2 class="card__title">{%PROPS.NAME%}</h2>
+    </div>
+
+    <div class="card__details">
+      <div class="card__detail-box {%PROPS.ORGANIC%}">
+        <h6 class="card__detail card__detail--organic">Organic!</h6>
+      </div>
+
+      <div class="card__detail-box">
+        <h6 class="card__detail">{%PROPS.QTY%} per 📦</h6>
+      </div>
+
+      <div class="card__detail-box">
+        <h6 class="card__detail card__detail--price">{%PROPS.PRICE%}€</h6>
+      </div>
+    </div>
+
+    <a class="card__link" href="/product/?id={%PROPS.ID%}">
+      <span>Detail <i class="emoji-right">👉</i></span>
+    </a>
+  </figure>
